@@ -4,7 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>동안약침 피부 자가진단 | 영은한의원</title>
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Pretendard:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --pink-deep: #c45c7a;
@@ -25,10 +26,11 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
 
   body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
     background: var(--cream);
     color: var(--deep);
     min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
   }
 
   /* HERO */
@@ -59,20 +61,20 @@
     display: inline-block;
     border: 1px solid rgba(244,167,186,0.6);
     color: var(--pink-light);
-    font-size: 11px;
-    letter-spacing: 3px;
+    font-size: 10px;
+    letter-spacing: 4px;
     padding: 5px 18px;
     margin-bottom: 18px;
-    font-family: 'Noto Serif KR', serif;
+    font-weight: 500;
     border-radius: 20px;
   }
   .hero h1 {
-    font-family: 'Noto Serif KR', serif;
-    font-size: 27px;
+    font-size: 26px;
     font-weight: 700;
     color: #fff;
     line-height: 1.45;
     margin-bottom: 12px;
+    letter-spacing: -0.5px;
   }
   .hero h1 span { color: var(--pink-light); }
   .hero p {
@@ -89,10 +91,10 @@
   }
   .stat { text-align: center; }
   .stat-num {
-    font-family: 'Noto Serif KR', serif;
     font-size: 22px;
     color: var(--pink-light);
     font-weight: 700;
+    letter-spacing: -0.5px;
   }
   .stat-label { font-size: 11px; color: rgba(255,255,255,0.5); margin-top: 2px; }
 
@@ -162,10 +164,10 @@
   }
 
   .section-title {
-    font-family: 'Noto Serif KR', serif;
-    font-size: 12px;
+    font-size: 11px;
+    font-weight: 700;
     color: var(--pink-deep);
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-align: center;
     padding: 28px 0 6px;
     display: flex;
@@ -228,10 +230,9 @@
     border-radius: 50px;
     padding: 16px 48px;
     font-size: 15px;
-    font-family: 'Noto Serif KR', serif;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     box-shadow: 0 8px 24px rgba(196,92,122,0.3);
     transition: all 0.3s;
   }
@@ -269,11 +270,11 @@
     margin-bottom: 14px;
   }
   .result-type-name {
-    font-family: 'Noto Serif KR', serif;
-    font-size: 23px;
+    font-size: 22px;
     color: #fff;
     font-weight: 700;
     margin-bottom: 10px;
+    letter-spacing: -0.5px;
   }
   .result-desc { font-size: 13px; color: rgba(255,255,255,0.82); line-height: 1.8; }
 
@@ -286,10 +287,10 @@
     box-shadow: 0 2px 14px rgba(196,92,122,0.06);
   }
   .result-card-title {
-    font-family: 'Noto Serif KR', serif;
-    font-size: 12.5px;
+    font-size: 11px;
+    font-weight: 700;
     color: var(--pink-deep);
-    letter-spacing: 1px;
+    letter-spacing: 2px;
     margin-bottom: 14px;
     display: flex;
     align-items: center;
@@ -345,8 +346,10 @@
     border-radius: 14px;
     padding: 16px;
     margin-bottom: 10px;
+    position: relative;
   }
-  .herb-name { font-size: 15px; font-weight: 700; color: var(--rose); margin-bottom: 6px; font-family: 'Noto Serif KR', serif; }
+  .herb-card:last-child { margin-bottom: 0; }
+  .herb-name { font-size: 15px; font-weight: 700; color: var(--rose); margin-bottom: 4px; letter-spacing: -0.3px; }
   .herb-hanja { font-size: 11px; color: var(--mid); margin-bottom: 8px; letter-spacing: 1px; }
   .herb-desc { font-size: 12.5px; color: var(--deep); line-height: 1.7; }
   .herb-tags { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 8px; }
@@ -372,7 +375,7 @@
     text-align: center;
     margin-bottom: 12px;
   }
-  .cta-card h3 { font-family: 'Noto Serif KR', serif; font-size: 18px; color: #fff; margin-bottom: 8px; }
+  .cta-card h3 { font-size: 17px; font-weight: 700; color: #fff; margin-bottom: 8px; letter-spacing: -0.3px; }
   .cta-card p { font-size: 13px; color: rgba(255,255,255,0.85); line-height: 1.7; margin-bottom: 18px; }
   .cta-btn {
     display: inline-block;
@@ -382,13 +385,12 @@
     border-radius: 50px;
     padding: 13px 34px;
     font-size: 14px;
-    font-family: 'Noto Serif KR', serif;
     font-weight: 700;
     text-decoration: none;
     cursor: pointer;
     box-shadow: 0 6px 18px rgba(0,0,0,0.12);
     transition: all 0.3s;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.3px;
   }
   .cta-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 26px rgba(0,0,0,0.18); }
 
@@ -414,7 +416,7 @@
     margin-bottom: 20px;
     color: #fff;
   }
-  .survey-header h2 { font-family: 'Noto Serif KR', serif; font-size: 18px; margin-bottom: 6px; }
+  .survey-header h2 { font-size: 17px; font-weight: 700; margin-bottom: 6px; letter-spacing: -0.3px; }
   .survey-header p { font-size: 12px; opacity: 0.85; }
 
   .survey-card {
@@ -553,10 +555,9 @@
     border-radius: 50px;
     padding: 16px;
     font-size: 15px;
-    font-family: 'Noto Serif KR', serif;
-    font-weight: 600;
+    font-weight: 700;
     cursor: pointer;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     box-shadow: 0 8px 24px rgba(196,92,122,0.3);
     transition: all 0.3s;
     margin-top: 8px;
@@ -570,7 +571,7 @@
   }
   .survey-complete.show { display: block; animation: fadeUp 0.5s forwards; }
   .complete-icon { font-size: 56px; margin-bottom: 16px; }
-  .complete-title { font-family: 'Noto Serif KR', serif; font-size: 22px; color: var(--rose); margin-bottom: 10px; }
+  .complete-title { font-size: 21px; font-weight: 700; color: var(--rose); margin-bottom: 10px; letter-spacing: -0.5px; }
   .complete-desc { font-size: 14px; color: var(--mid); line-height: 1.8; }
 
   .clinic-info { text-align: center; padding: 16px; font-size: 11.5px; color: rgba(122,69,88,0.55); line-height: 1.9; }
@@ -947,17 +948,19 @@ const types = {
     symptoms: ['건조함·당김', '잔주름·탄력저하', '칙칙한 피부톤', '기미·색소침착', '손발 냉감', '만성 피로'],
     score: { moisture: 28, elasticity: 52, tone: 48, sensitivity: 58 },
     treatments: [
-      { icon: '💉', name: '자하거 약침', desc: '태반 추출 성분으로 피부 재생과 수분막 복원. 음허형 피부의 핵심 약침' },
-      { icon: '🌿', name: '녹용 보음 약침', desc: '진액을 보충하고 세포 재생 촉진. 깊은 보습과 탄력 회복 효과' },
-      { icon: '✨', name: '침 치료 (신수·삼음교)', desc: '신장 기능을 보강해 피부 수분 대사를 근본적으로 개선' },
+      { icon: '🌡️', name: '수승화강약침 (MOK+V)', desc: '수기는 올리고 화기는 내려 몸의 균형을 잡아줍니다. 갱년기 홍조·열감 개선에 탁월한 핵심 약침' },
+      { icon: '✨', name: '동안약침', desc: '동안 만들기·리프팅·턱살 정리. 얼굴 전체 윤곽을 가꿔주는 프리미엄 약침' },
+      { icon: '🌟', name: '태반약침', desc: '신데렐라 안면 밝게·갱년기 극복. 피부 재생과 밝기 개선을 동시에' },
     ],
     herbs: [
-      { name: '육미지황탕', hanja: '六味地黃湯', desc: '신장의 음허를 보충하는 대표 처방. 기미 개선, 피부 보습, 노화 방지에 효과적입니다.', tags: ['보습', '기미', '노화방지', '신장기능'] },
-      { name: '자음강화탕', hanja: '滋陰降火湯', desc: '음허로 인한 열감과 건조함을 동시에 잡아줍니다. 피부 트러블과 홍조 개선에 좋습니다.', tags: ['진정', '보습', '열감해소'] }
+      { name: '경옥고', hanja: '瓊玉膏', desc: '최고급 보양 처방. 기력 보충, 피부 윤기, 노화 방지에 탁월하며 건성·음허 체질에 가장 잘 맞습니다.', tags: ['보양', '노화방지', '피부윤기', '기력충전'] },
+      { name: '공진단', hanja: '拱辰丹', desc: '뇌와 몸 전체의 기혈을 강화하는 황제의 보약. 피부 활력과 전신 컨디션 개선에 효과적입니다.', tags: ['기혈강화', '활력', '피부광채', '피로회복'] },
+      { name: '체질탕약', hanja: '體質湯藥', desc: '사상체질(태양·태음·소양·소음)에 맞춘 1:1 맞춤 처방. 내 몸에 꼭 맞는 근본 치료를 제공합니다.', tags: ['체질맞춤', '1:1처방', '근본치료'] },
+      { name: '다이어트탕약', hanja: '減重湯藥', desc: '체질과 비만 유형을 분석해 처방하는 한방 다이어트. 요요 없이 건강하게 체중을 조절합니다.', tags: ['체중조절', '체질분석', '요요방지'] }
     ],
     benefits: [
       { icon: '💧', title: '수분 충전', desc: '진액 보충으로 속부터 촉촉하게' },
-      { icon: '✨', title: '광채 개선', desc: '칙칙함 해소, 피부 투명도 향상' },
+      { icon: '🌡️', title: '홍조 개선', desc: '갱년기 열감·홍조 근본 조절' },
       { icon: '🌸', title: '기미 완화', desc: '색소 침착 개선, 균일한 피부톤' },
       { icon: '⏰', title: '노화 방지', desc: '잔주름 감소, 피부 탄력 회복' }
     ]
@@ -968,13 +971,15 @@ const types = {
     symptoms: ['과잉 피지', '여드름·트러블', '넓은 모공', '여드름 흉터', '얼굴 달아오름', '상열감'],
     score: { moisture: 68, elasticity: 58, tone: 38, sensitivity: 48 },
     treatments: [
-      { icon: '💉', name: '황련 약침', desc: '청열해독 작용으로 피지 조절과 염증 억제. 여드름·트러블 피부의 필수 약침' },
-      { icon: '🌿', name: '어성초 약침', desc: '항균·항염 효과로 모공 정화와 피부결 개선' },
-      { icon: '✨', name: '침 치료 (합곡·곡지)', desc: '대장·폐 기능을 조절해 피부 노폐물 배출 강화' },
+      { icon: '✨', name: '동안약침', desc: '동안 만들기·리프팅·턱살 정리. 지성 피부의 모공과 윤곽을 함께 개선하는 프리미엄 약침' },
+      { icon: '🌡️', name: '수승화강약침 (MOK+V)', desc: '체내 열기를 아래로 내려 피지 과잉과 얼굴 열감을 근본적으로 조절' },
+      { icon: '🌟', name: '태반약침', desc: '신데렐라 안면 밝게. 여드름 흉터·칙칙한 피부톤을 밝혀주는 재생 약침' },
     ],
     herbs: [
-      { name: '형개연교탕', hanja: '荊芥連翹湯', desc: '습열을 제거하고 피지 분비를 조절하는 처방. 여드름, 모공, 트러블성 피부에 탁월합니다.', tags: ['피지조절', '여드름', '모공', '항염'] },
-      { name: '황련해독탕', hanja: '黃連解毒湯', desc: '열독을 제거하고 피부 염증을 가라앉힙니다. 반복적인 트러블과 붉음증에 효과적입니다.', tags: ['청열', '항염', '붉음증', '진정'] }
+      { name: '체질탕약', hanja: '體質湯藥', desc: '소양인 등 열이 많은 체질에 맞춘 1:1 처방으로 피지 과잉과 트러블을 근본적으로 잡아줍니다.', tags: ['체질맞춤', '피지조절', '트러블', '1:1처방'] },
+      { name: '다이어트탕약', hanja: '減重湯藥', desc: '습열형 비만을 함께 관리합니다. 체중 조절과 피부 개선을 동시에 달성하는 맞춤 처방입니다.', tags: ['체중조절', '습열제거', '피부개선'] },
+      { name: '공진단', hanja: '拱辰丹', desc: '기혈 순환을 강화해 피부 재생력을 높입니다. 여드름 자국과 피부 활력 회복에 효과적입니다.', tags: ['기혈강화', '재생력', '피부활력'] },
+      { name: '경옥고', hanja: '瓊玉膏', desc: '보양과 피부 윤기를 동시에. 트러블 이후 피부 회복과 전신 컨디션 향상에 도움을 줍니다.', tags: ['피부회복', '보양', '컨디션'] }
     ],
     benefits: [
       { icon: '🫧', title: '피지 조절', desc: '과잉 피지 균형 조절' },
@@ -989,18 +994,20 @@ const types = {
     symptoms: ['부위별 복합 피부', '얼굴 처짐·윤곽 변화', '팔자주름', '칙칙한 안색', '얼굴 부종', '불규칙한 피부상태'],
     score: { moisture: 53, elasticity: 38, tone: 53, sensitivity: 43 },
     treatments: [
-      { icon: '💉', name: '봉독 약침', desc: '리프팅·탄력 효과 탁월. 콜라겐 생성을 자극해 처진 피부와 윤곽 개선에 특화' },
-      { icon: '🌿', name: '홍화 순환 약침', desc: '혈행 촉진으로 얼굴 부종·처짐 개선, 안색 밝힘 효과' },
-      { icon: '✨', name: '침 치료 (족삼리·태충)', desc: '간 기능과 소화 기능을 함께 조절해 기의 흐름 회복' },
+      { icon: '✨', name: '동안약침', desc: '동안 만들기·리프팅·턱살 정리. 기체형 피부의 처짐과 윤곽을 집중 개선하는 핵심 약침' },
+      { icon: '🔮', name: 'HN약침 (인당)', desc: '인당 함몰 개선·인당울 해소·운명 바꾸기. 얼굴 중심 에너지를 바로잡아 전체 인상을 밝게' },
+      { icon: '🌡️', name: '수승화강약침 (MOK+V)', desc: '순환을 개선하고 기의 흐름을 회복. 얼굴 부종과 처짐을 근본적으로 개선' },
     ],
     herbs: [
-      { name: '소요산', hanja: '逍遙散', desc: '기체(氣滯)를 풀어 혈액 순환을 개선합니다. 스트레스성 피부 악화, 얼굴 부종, 안색 개선에 효과적입니다.', tags: ['기순환', '부종', '안색', '스트레스'] },
-      { name: '사물탕', hanja: '四物湯', desc: '혈(血)을 보충하고 순환시켜 피부에 영양을 공급합니다. 탄력 저하와 윤곽 처짐에 탁월합니다.', tags: ['탄력', '혈행', '윤곽', '리프팅'] }
+      { name: '공진단', hanja: '拱辰丹', desc: '기혈 순환을 강력하게 활성화합니다. 얼굴 처짐, 부종, 칙칙한 안색을 개선하고 리프팅 효과를 극대화합니다.', tags: ['기혈순환', '리프팅', '안색', '부종'] },
+      { name: '체질탕약', hanja: '體質湯藥', desc: '체질별 순환 개선 맞춤 처방. 기체 체질의 막힌 흐름을 풀어 피부와 전신을 함께 개선합니다.', tags: ['기체해소', '체질맞춤', '순환개선'] },
+      { name: '다이어트탕약', hanja: '減重湯藥', desc: '기체로 인한 부종성 비만을 함께 관리합니다. 얼굴 라인 개선과 체중 조절을 동시에 달성합니다.', tags: ['부종개선', '체중조절', '얼굴라인'] },
+      { name: '경옥고', hanja: '瓊玉膏', desc: '전신 기력을 보강하고 피부에 윤기를 더합니다. 리프팅 시술 후 피부 회복력을 높이는 데 탁월합니다.', tags: ['기력보강', '윤기', '회복력'] }
     ],
     benefits: [
       { icon: '⬆️', title: '리프팅', desc: '처진 얼굴 라인 개선' },
       { icon: '🔄', title: '순환 개선', desc: '혈행·림프 순환 활성화' },
-      { icon: '📏', title: '윤곽 개선', desc: '팔자주름·마리오네트 완화' },
+      { icon: '📏', title: '윤곽 개선', desc: '팔자주름·턱살 정리' },
       { icon: '💫', title: '안색 개선', desc: '칙칙함 해소, 생기 회복' }
     ]
   },
@@ -1010,24 +1017,49 @@ const types = {
     symptoms: ['쉬운 홍조·붉어짐', '자극 반응 민감', '피부 얇아짐', '모세혈관 확장', '스트레스성 트러블', '계절 변화에 취약'],
     score: { moisture: 43, elasticity: 48, tone: 33, sensitivity: 22 },
     treatments: [
-      { icon: '💉', name: '황기 약침', desc: '위기를 보강해 피부 방어막 강화. 민감성 피부의 근본 치료' },
-      { icon: '🌿', name: '감초·백출 진정 약침', desc: '항염·진정 효과로 즉각적인 붉음증·가려움 완화' },
-      { icon: '✨', name: '침 치료 (폐수·비수)', desc: '폐와 비장 기능을 보강해 피부 면역과 방어력 향상' },
+      { icon: '🌟', name: '태반약침', desc: '신데렐라 안면 밝게·갱년기 극복. 민감한 피부의 재생력을 높이고 안면을 전체적으로 밝혀줍니다' },
+      { icon: '🌡️', name: '수승화강약침 (MOK+V)', desc: '갱년기 홍조 개선. 몸의 열 균형을 잡아 민감한 피부의 붉음증과 열감을 진정' },
+      { icon: '🔮', name: 'HN약침 (인당)', desc: '인당 함몰 개선·인당울 해소. 피부 에너지를 바로잡아 민감도를 낮추고 피부 면역력 강화' },
     ],
     herbs: [
-      { name: '옥병풍산', hanja: '玉屛風散', desc: '피부 면역력을 높이는 대표 처방. 민감도 감소, 피부 방어막 복원, 반복적인 홍조 개선에 효과적입니다.', tags: ['피부장벽', '면역', '홍조', '민감도'] },
-      { name: '당귀음자', hanja: '當歸飮子', desc: '피부에 영양을 공급하고 건조함과 가려움을 잡아줍니다. 민감·건성 복합 피부에 좋습니다.', tags: ['보습', '가려움', '진정', '영양공급'] }
+      { name: '경옥고', hanja: '瓊玉膏', desc: '최고급 보양 처방으로 피부 방어막을 복원합니다. 민감성 피부의 근본 체력을 끌어올립니다.', tags: ['피부장벽', '보양', '면역강화', '민감도'] },
+      { name: '체질탕약', hanja: '體質湯藥', desc: '소음인 등 민감 체질에 맞춘 1:1 처방. 피부 면역을 높이고 외부 자극에 강한 피부를 만들어줍니다.', tags: ['체질맞춤', '면역', '피부강화'] },
+      { name: '공진단', hanja: '拱辰丹', desc: '기혈을 강화해 피부 재생력과 면역력을 동시에 높입니다. 홍조와 민감도 개선에 효과적입니다.', tags: ['기혈강화', '재생력', '홍조개선'] },
+      { name: '다이어트탕약', hanja: '減重湯藥', desc: '체질에 맞게 처방해 무리 없이 건강하게 체중을 조절합니다. 피부 트러블 없이 다이어트할 수 있습니다.', tags: ['건강다이어트', '체질맞춤', '트러블없이'] }
     ],
     benefits: [
       { icon: '🛡️', title: '장벽 강화', desc: '피부 방어막 회복' },
-      { icon: '🌡️', title: '홍조 진정', desc: '붉음증, 모세혈관 확장 완화' },
+      { icon: '🌡️', title: '홍조 진정', desc: '붉음증, 갱년기 열감 완화' },
       { icon: '💊', title: '면역 조절', desc: '피부 면역력 향상' },
       { icon: '🌸', title: '민감도 감소', desc: '자극 반응 내성 강화' }
     ]
   }
 };
 
-function sel(btn) {
+function sendKakao(e) {
+  e.preventDefault();
+  const t = types[Object.keys({dry:0,oily:0,combo:0,sensitive:0}).reduce((a,b) => {
+    const c = {dry:0,oily:0,combo:0,sensitive:0};
+    Object.values(answers).forEach(v=>c[v]++);
+    return c[a]>c[b]?a:b;
+  })];
+  const dominant = Object.keys({dry:0,oily:0,combo:0,sensitive:0}).reduce((a,b) => {
+    const c = {dry:0,oily:0,combo:0,sensitive:0};
+    Object.values(answers).forEach(v=>c[v]++);
+    return c[a]>=c[b]?a:b;
+  });
+  const tp = types[dominant];
+  const msg = encodeURIComponent(
+    `[영은한의원 피부진단 결과]\n\n` +
+    `✦ 피부 유형: ${tp.name}\n` +
+    `✦ 주요 증상: ${tp.symptoms.slice(0,3).join(', ')}\n\n` +
+    `추천 약침: ${tp.treatments.map(t=>t.name).join(', ')}\n\n` +
+    `상담 예약을 원합니다 😊`
+  );
+  window.open(`https://open.kakao.com/o/gzvehqri`, '_blank');
+}
+
+
   const q = btn.dataset.q, v = btn.dataset.v;
   document.querySelectorAll(`[data-q="${q}"]`).forEach(b => b.classList.remove('selected'));
   btn.classList.add('selected');
@@ -1074,9 +1106,10 @@ function showResult() {
     <div class="result-card"><div class="result-card-title">맞춤 약침 프로토콜</div>${treatHTML}</div>
     <div class="result-card"><div class="result-card-title">함께 추천하는 한약</div>${herbHTML}</div>
     <div class="cta-card">
-      <h3>맞춤 동안약침 상담 예약</h3>
-      <p>진단 결과를 바탕으로 원장님이<br>1:1 맞춤 프로토콜을 설계해드립니다 💕</p>
-      <a class="cta-btn" href="https://m.booking.naver.com/booking/13/bizes/650417?theme=place&service-target=map-pc&lang=ko&area=plt&map-search=1" target="_blank">📅 네이버 예약 바로가기</a>
+      <h3>결과를 원장님께 바로 전달하기</h3>
+      <p>진단 결과를 카카오톡으로 보내면<br>원장님이 직접 맞춤 상담을 도와드려요 💕</p>
+      <a class="cta-btn" id="kakaoSendBtn" href="#" onclick="sendKakao(event)" style="background:#FEE500;color:#3C1E1E;display:block;margin-bottom:10px;">💬 카카오톡으로 결과 전송하기</a>
+      <a class="cta-btn" href="https://m.booking.naver.com/booking/13/bizes/650417?theme=place&service-target=map-pc&lang=ko&area=plt&map-search=1" target="_blank" style="display:block;">📅 네이버 예약 바로가기</a>
     </div>
   `;
   document.getElementById('quizContainer').style.display = 'none';
